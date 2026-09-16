@@ -3,23 +3,29 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Studio Felvar — Audio studio, Zürich</title>
+<title>Studio Felvar</title>
 <meta name="description" content="Studio Felvar is an audio studio in Zurich specialising in sound design, music composition and audio post-production for podcasts, film and cultural projects." />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
 <link rel="canonical" href="https://studiofelvar.com/" />
 <meta property="og:title" content="Studio Felvar — Audio studio, Zürich" />
 <meta property="og:description" content="Sound design, music composition and audio post-production." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://studiofelvar.com/" />
+<meta property="og:image" content="https://studiofelvar.com/assets/overkill.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <style>
+  *, *::before, *::after { box-sizing: border-box; }
   html { -webkit-font-smoothing: antialiased; scroll-behavior: smooth; }
   body { margin: 0; background: #fbf9f4; }
   a { color: #17150f; text-decoration: none; transition: color .25s ease, border-color .25s ease; }
   a:hover { color: #17150f; }
-  .wtitle:hover { transform: scale(1.045); }
+  .wtitle:hover { transform: scale(1.03); }
   .svc:hover { transform: translateX(6px); }
+  .mail { display: inline-block; transition: color .25s ease, border-color .25s ease; }
+  .mail:hover { color: #8a6a2f !important; border-color: #8a6a2f !important; }
   img:hover { opacity: .86; }
   .player button:hover { background: #4a443c; }
   @keyframes felvarIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
@@ -35,11 +41,11 @@
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto !important; } * { animation: none !important; transition: none !important; } }
 </style>
 </head>
-<body>
-<div style="font-family:Archivo,Helvetica,Arial,sans-serif;background:#fbf9f4;color:#17150f;min-height:100vh;padding:0 clamp(18px,4vw,64px)">
+<body id="top">
+<div style="font-family:Archivo,Helvetica,Arial,sans-serif;background:#fbf9f4;color:#17150f;min-height:100vh;overflow-x:clip;padding:0 clamp(18px,4vw,64px)">
 
   <header style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:calc(22px + env(safe-area-inset-top,0px)) 0 0">
-    <span style="font-weight:700;font-size:clamp(15px,1.5vw,19px);letter-spacing:-.035em;text-transform:uppercase;color:#999">Studio Felvar</span>
+    <a href="#top" style="font-weight:700;font-size:clamp(15px,1.5vw,19px);letter-spacing:-.035em;text-transform:uppercase;color:#17150f">Studio Felvar</a>
     <nav style="display:flex;align-items:center;gap:clamp(16px,3vw,34px);margin:-14px 0;font-size:13px;letter-spacing:.04em">
       <a href="#services" style="display:flex;align-items:center;min-height:44px">Services</a>
       <a href="#about" style="display:flex;align-items:center;min-height:44px">About</a>
@@ -50,94 +56,144 @@
   <section style="display:flex;flex-direction:column;gap:clamp(15px,2.4vh,28px);padding:clamp(20px,3vh,34px) 0 clamp(32px,5vh,60px);animation:felvarIn .8s ease both">
     <div style="height:1px;background:#e4ddd0;transform-origin:left;animation:felvarRule 1.4s .15s cubic-bezier(.16,1,.3,1) both"></div>
     <div style="display:flex;margin-top:clamp(6px,1.6vh,18px)">
-      <div style="flex:1 1 auto;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:clamp(16px,2.4vh,24px)">
-        <h1 style="margin:0;max-width:26ch;font-weight:600;font-size:clamp(2rem,5.4vw,4.2rem);line-height:1.02;letter-spacing:-.035em;text-indent:-.025em;text-wrap:pretty;animation:felvarMark 1.1s cubic-bezier(.16,1,.3,1) both">We take projects from first edit to final master.</h1>
-        <p style="margin:0;max-width:42ch;font-size:clamp(1.02rem,1.4vw,1.2rem);line-height:1.45;letter-spacing:-.01em;color:#4a443c;text-wrap:pretty">Bring us in early enough and we shape how the whole thing sounds.</p>
+      <div style="flex:1 1 auto;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:clamp(12px,1.8vh,18px)">
+        <h1 style="margin:0;max-width:24ch;font-weight:600;font-size:clamp(1.75rem,4.1vw,3.15rem);line-height:1.06;letter-spacing:-.03em;text-indent:-.022em;text-wrap:balance;animation:felvarMark 1.1s cubic-bezier(.16,1,.3,1) both">We take projects from first edit to final master.</h1>
+        <p style="margin:0;max-width:40ch;font-size:clamp(1.02rem,1.5vw,1.3rem);line-height:1.5;letter-spacing:-.012em;color:#4a443c;text-wrap:pretty">Bring us in early enough and we shape how the whole thing sounds.</p>
       </div>
     </div>
   </section>
 
   <section id="work" style="scroll-margin-top:clamp(16px,3vh,32px);padding:clamp(14px,2vh,26px) 0 clamp(34px,5.5vh,64px)">
-    <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:10px clamp(14px,3vw,40px);margin-bottom:clamp(20px,3.4vw,38px)">
-      <h2 data-rail="head" style="flex:0 0 clamp(90px,15vw,220px);width:clamp(90px,15vw,220px);min-width:0;max-width:clamp(90px,15vw,220px);margin:0;font-weight:600;font-size:min(2.6rem,calc(clamp(90px,15vw,220px)/5.1));overflow-wrap:anywhere;line-height:0.92;letter-spacing:-0.03em;text-transform:uppercase;">Selected work</h2>
+    <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:10px clamp(14px,3vw,40px);margin-bottom:clamp(8px,1.2vw,14px)">
+      <h2 data-rail="head" style="flex:0 0 auto;margin:0;font-weight:600;font-size:min(2.6rem,calc(clamp(90px,15vw,220px)/5.1));white-space:nowrap;line-height:0.92;letter-spacing:-0.03em;text-transform:uppercase;">Selected work</h2>
     </div>
-    <article data-reveal style="border-top:1px solid #e4ddd0;padding:clamp(22px,3.2vw,38px) 0;display:flex;flex-wrap:wrap;gap:10px clamp(14px,3vw,40px)">
-      <span data-rail="num" style="flex:0 0 clamp(90px,15vw,220px);width:clamp(90px,15vw,220px);min-width:0;max-width:clamp(90px,15vw,220px);font-family:'IBM Plex Mono',monospace;font-size:clamp(1.1rem,1.8vw,1.5rem);font-weight:500;letter-spacing:.04em;color:#17150f">01</span>
-      <div style="flex:1 1 420px;min-width:0;display:flex;flex-wrap:wrap;gap:clamp(16px,2.6vw,36px)">
-        <div style="flex:1 1 100%;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;background:#f6e7bb;color:#443614;border-radius:6px;padding:12px 16px">
+    <article data-reveal style="border-top:1px solid #e4ddd0;padding:clamp(22px,3.2vw,38px) 0;display:flex;flex-direction:column;gap:clamp(16px,2.4vw,26px)">
+        <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:6px clamp(14px,2.4vw,28px);row-gap:10px">
+          <span style="flex:0 0 auto;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;color:#6b635a">01</span>
+          <h3 class="wtitle" style="margin:0;font-weight:600;font-size:clamp(1.5rem,3vw,2.4rem);line-height:1.02;letter-spacing:-.03em;transform-origin:left center;transition:transform .4s cubic-bezier(.16,1,.3,1)"><a href="https://elephantstories.ch/overkill/" target="_blank" rel="noopener" style="border-bottom:1px solid #d6cdbb;padding-bottom:2px">Overkill</a></h3>
+          <span style="flex:1 1 auto;min-width:0;margin-left:auto;text-align:right;font-size:11px;letter-spacing:.01em;color:#6b635a">Elephant Stories · Der Beobachter</span>
+        </div>
+        <p style="margin:-12px 0 0;max-width:62ch;font-size:13px;line-height:1.5;letter-spacing:-.003em;color:#4a443c;text-wrap:pretty">A five-part true-crime podcast series about a murder, its victims and the search for justice.</p>
+        <div style="display:flex;flex-wrap:wrap;align-items:stretch;gap:clamp(12px,2vw,20px);background:#f6e7bb;color:#443614;border-radius:6px;padding:clamp(12px,1.6vw,16px)">
+          <img src="assets/award-verleihung.jpg" alt="Studio Felvar at the Suisse Podcast Awards" loading="lazy" data-zoom style="cursor:zoom-in;flex:0 0 auto;display:block;width:clamp(150px,22vw,246px);aspect-ratio:3/2;object-fit:cover;border-radius:4px" />
+          <div style="flex:1 1 260px;min-width:0;display:flex;flex-direction:column;justify-content:center;gap:8px">
             <span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#6b5522">Award</span>
             <p style="margin:0;font-size:clamp(.98rem,1.4vw,1.2rem);line-height:1.3;letter-spacing:-.015em">Nominated best series at the Suisse Podcast Awards 2026.</p>
           </div>
-        <div style="flex:1 1 210px;min-width:0;display:flex;flex-direction:column;gap:12px">
-          <h3 class="wtitle" style="margin:0;font-weight:600;font-size:clamp(1.5rem,3vw,2.4rem);line-height:1.02;letter-spacing:-.03em;display:inline-block;transform-origin:left center;transition:transform .4s cubic-bezier(.16,1,.3,1)"><a href="https://elephantstories.ch/overkill/" target="_blank" rel="noopener" style="border-bottom:1px solid #d6cdbb;padding-bottom:2px">Overkill</a></h3>
-          <span style="font-size:13px;color:#6b635a;letter-spacing:.01em">Elephant Stories · Der Beobachter</span>
         </div>
-        <div style="flex:1.9 1 320px;min-width:0;display:flex;flex-direction:column;gap:14px">
-          <img src="assets/overkill.jpg" alt="Overkill series artwork" loading="lazy" style="display:block;width:100%;max-width:440px;aspect-ratio:1/1;object-fit:cover;border-radius:6px;transition:opacity .4s ease" />
-          <iframe src="https://open.spotify.com/embed/episode/1D7wOypx8vryVqiA5QVGnu?utm_source=generator" width="100%" height="152" frameborder="0" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" style="border:0;display:block"></iframe>
-          <p style="margin:0;font-size:13px;line-height:1.6;color:#6b635a;white-space:pre-line;text-wrap:pretty">Written and moderated by Charlotte Theile and Fiona Lusti, Elephant Stories
-Produced by Carlo Lardi, Ringier Medien
-Music composition and sound design by Studio Felvar</p>
+        <div style="display:flex;flex-wrap:wrap;align-items:stretch;gap:clamp(12px,2vw,20px)">
+          <img src="assets/overkill.jpg" alt="Overkill series artwork" loading="lazy" data-zoom style="cursor:zoom-in;flex:0 0 auto;display:block;width:clamp(120px,16vw,186px);aspect-ratio:1/1;object-fit:cover;border-radius:6px;transition:opacity .4s ease" />
+          <div style="flex:1 1 320px;min-width:0;display:flex;flex-direction:column;justify-content:center">
+            <iframe src="https://open.spotify.com/embed/episode/1D7wOypx8vryVqiA5QVGnu?utm_source=generator" width="100%" height="186" frameborder="0" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" style="border:0;display:block;border-radius:6px"></iframe>
+          </div>
         </div>
-      </div>
+        <dl style="margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 clamp(20px,4vw,56px);border-top:1px solid #ece6dc">
+          <div style="display:flex;flex-wrap:wrap;gap:2px 12px;padding:8px 0">
+            <dt style="flex:0 0 100%;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:#6b635a">Written and moderated</dt>
+            <dd style="flex:1 1 100%;min-width:0;margin:0;font-size:13px;line-height:1.5;color:#17150f;text-wrap:pretty">Charlotte Theile and Fiona Lusti, Elephant Stories</dd>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:2px 12px;padding:8px 0">
+            <dt style="flex:0 0 100%;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:#6b635a">Produced</dt>
+            <dd style="flex:1 1 100%;min-width:0;margin:0;font-size:13px;line-height:1.5;color:#17150f;text-wrap:pretty">Carlo Lardi, Ringier Medien</dd>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:2px 12px;padding:8px 0">
+            <dt style="flex:0 0 100%;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:#6b635a">Music composition and sound design</dt>
+            <dd style="flex:1 1 100%;min-width:0;margin:0;font-size:13px;line-height:1.5;color:#17150f;text-wrap:pretty">Studio Felvar</dd>
+          </div>
+        </dl>
     </article>
-    <article data-reveal style="border-top:1px solid #e4ddd0;padding:clamp(22px,3.2vw,38px) 0;display:flex;flex-wrap:wrap;gap:10px clamp(14px,3vw,40px)">
-      <span data-rail="num" style="flex:0 0 clamp(90px,15vw,220px);width:clamp(90px,15vw,220px);min-width:0;max-width:clamp(90px,15vw,220px);font-family:'IBM Plex Mono',monospace;font-size:clamp(1.1rem,1.8vw,1.5rem);font-weight:500;letter-spacing:.04em;color:#17150f">02</span>
-      <div style="flex:1 1 420px;min-width:0;display:flex;flex-wrap:wrap;gap:clamp(16px,2.6vw,36px)">
-        
-        <div style="flex:1 1 210px;min-width:0;display:flex;flex-direction:column;gap:12px">
-          <h3 class="wtitle" style="margin:0;font-weight:600;font-size:clamp(1.5rem,3vw,2.4rem);line-height:1.02;letter-spacing:-.03em;display:inline-block;transform-origin:left center;transition:transform .4s cubic-bezier(.16,1,.3,1)"><a href="https://elephantstories.ch/elephant-in-the-room/" target="_blank" rel="noopener" style="border-bottom:1px solid #d6cdbb;padding-bottom:2px">Elephant In The Room</a></h3>
-          <span style="font-size:13px;color:#6b635a;letter-spacing:.01em">Elephant Stories</span>
+    <article data-reveal style="border-top:1px solid #e4ddd0;padding:clamp(22px,3.2vw,38px) 0;display:flex;flex-direction:column;gap:clamp(16px,2.4vw,26px)">
+        <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:6px clamp(14px,2.4vw,28px);row-gap:10px">
+          <span style="flex:0 0 auto;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;color:#6b635a">02</span>
+          <h3 class="wtitle" style="margin:0;font-weight:600;font-size:clamp(1.5rem,3vw,2.4rem);line-height:1.02;letter-spacing:-.03em;transform-origin:left center;transition:transform .4s cubic-bezier(.16,1,.3,1)"><a href="https://elephantstories.ch/elephant-in-the-room/" target="_blank" rel="noopener" style="border-bottom:1px solid #d6cdbb;padding-bottom:2px">Elephant In The Room</a></h3>
+          <span style="flex:1 1 auto;min-width:0;margin-left:auto;text-align:right;font-size:11px;letter-spacing:.01em;color:#6b635a">Elephant Stories</span>
         </div>
-        <div style="flex:1.9 1 320px;min-width:0;display:flex;flex-direction:column;gap:14px">
-          <img src="assets/elephant-in-the-room.webp" alt="Elephant In The Room series artwork" loading="lazy" style="display:block;width:100%;max-width:440px;aspect-ratio:1/1;object-fit:cover;border-radius:6px;transition:opacity .4s ease" />
-          <iframe src="https://open.spotify.com/embed/show/033x31etPq6zthxaXV9MfZ?utm_source=generator" width="100%" height="152" frameborder="0" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" style="border:0;display:block"></iframe>
-          <p style="margin:0;font-size:13px;line-height:1.6;color:#6b635a;white-space:pre-line;text-wrap:pretty">Written and moderated by Charlotte Theile and Mirja Gabathuler, Elephant Stories
-Produced by Mirja Gabathuler
-Music composition and sound design by Studio Felvar</p>
+        <p style="margin:-12px 0 0;max-width:62ch;font-size:13px;line-height:1.5;letter-spacing:-.003em;color:#4a443c;text-wrap:pretty">A podcast series about the issues we’d rather not talk about.</p>
+        <div style="display:flex;flex-wrap:wrap;align-items:stretch;gap:clamp(12px,2vw,20px)">
+          <img src="assets/elephant-in-the-room.webp" alt="Elephant In The Room series artwork" loading="lazy" data-zoom style="cursor:zoom-in;flex:0 0 auto;display:block;width:clamp(120px,16vw,186px);aspect-ratio:1/1;object-fit:cover;border-radius:6px;transition:opacity .4s ease" />
+          <div style="flex:1 1 320px;min-width:0;display:flex;flex-direction:column;justify-content:center">
+            <iframe src="https://open.spotify.com/embed/show/033x31etPq6zthxaXV9MfZ?utm_source=generator" width="100%" height="186" frameborder="0" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" style="border:0;display:block;border-radius:6px"></iframe>
+          </div>
         </div>
-      </div>
+        <div style="display:flex;flex-direction:column;gap:clamp(10px,1.6vw,16px)">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;color:#6b635a">Since launch</span>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:clamp(12px,2vw,24px)">
+            <div style="display:flex;flex-direction:column;gap:6px;border-left:1px solid #ded5c5;padding:2px 0 2px clamp(12px,1.6vw,18px)">
+              <span style="font-weight:600;font-size:clamp(1.6rem,3.4vw,2.6rem);line-height:1;letter-spacing:-.035em">45'000+</span>
+              <span style="font-size:12.5px;line-height:1.4;color:#6b635a;white-space:pre-line">Downloads</span>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:6px;border-left:1px solid #ded5c5;padding:2px 0 2px clamp(12px,1.6vw,18px)">
+              <span style="font-weight:600;font-size:clamp(1.6rem,3.4vw,2.6rem);line-height:1;letter-spacing:-.035em">12'500+</span>
+              <span style="font-size:12.5px;line-height:1.4;color:#6b635a;white-space:pre-line">Listeners</span>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:6px;border-left:1px solid #ded5c5;padding:2px 0 2px clamp(12px,1.6vw,18px)">
+              <span style="font-weight:600;font-size:clamp(1.6rem,3.4vw,2.6rem);line-height:1;letter-spacing:-.035em">#3</span>
+              <span style="font-size:12.5px;line-height:1.4;color:#6b635a;white-space:pre-line">Society &amp; Culture
+Apple Podcasts Switzerland</span>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:6px;border-left:1px solid #ded5c5;padding:2px 0 2px clamp(12px,1.6vw,18px)">
+              <span style="font-weight:600;font-size:clamp(1.6rem,3.4vw,2.6rem);line-height:1;letter-spacing:-.035em">62%</span>
+              <span style="font-size:12.5px;line-height:1.4;color:#6b635a;white-space:pre-line">of listeners
+are aged 28 to 44</span>
+            </div>
+          </div>
+        </div>
+        <dl style="margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 clamp(20px,4vw,56px);border-top:1px solid #ece6dc">
+          <div style="display:flex;flex-wrap:wrap;gap:2px 12px;padding:8px 0">
+            <dt style="flex:0 0 100%;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:#6b635a">Written and moderated</dt>
+            <dd style="flex:1 1 100%;min-width:0;margin:0;font-size:13px;line-height:1.5;color:#17150f;text-wrap:pretty">Charlotte Theile and Mirja Gabathuler, Elephant Stories</dd>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:2px 12px;padding:8px 0">
+            <dt style="flex:0 0 100%;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:#6b635a">Produced</dt>
+            <dd style="flex:1 1 100%;min-width:0;margin:0;font-size:13px;line-height:1.5;color:#17150f;text-wrap:pretty">Mirja Gabathuler</dd>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:2px 12px;padding:8px 0">
+            <dt style="flex:0 0 100%;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:#6b635a">Music composition and sound design</dt>
+            <dd style="flex:1 1 100%;min-width:0;margin:0;font-size:13px;line-height:1.5;color:#17150f;text-wrap:pretty">Studio Felvar</dd>
+          </div>
+        </dl>
     </article>
-    <article data-reveal style="border-top:1px solid #e4ddd0;padding:clamp(22px,3.2vw,38px) 0;display:flex;flex-wrap:wrap;gap:10px clamp(14px,3vw,40px)">
-      <span data-rail="num" style="flex:0 0 clamp(90px,15vw,220px);width:clamp(90px,15vw,220px);min-width:0;max-width:clamp(90px,15vw,220px);font-family:'IBM Plex Mono',monospace;font-size:clamp(1.1rem,1.8vw,1.5rem);font-weight:500;letter-spacing:.04em;color:#17150f">03</span>
-      <div style="flex:1 1 420px;min-width:0;display:flex;flex-wrap:wrap;gap:clamp(16px,2.6vw,36px)">
-        
-        <div style="flex:1 1 210px;min-width:0;display:flex;flex-direction:column;gap:12px">
-          <h3 class="wtitle" style="margin:0;font-weight:600;font-size:clamp(1.5rem,3vw,2.4rem);line-height:1.02;letter-spacing:-.03em;display:inline-block;transform-origin:left center;transition:transform .4s cubic-bezier(.16,1,.3,1)">Sportzentrum Oerlikon</h3>
-          <span style="font-size:13px;color:#6b635a;letter-spacing:.01em">Boltshauser Architekten · Stadt Zürich · Studio Blomen</span>
+    <article data-reveal style="border-top:1px solid #e4ddd0;padding:clamp(22px,3.2vw,38px) 0;display:flex;flex-direction:column;gap:clamp(16px,2.4vw,26px)">
+        <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:6px clamp(14px,2.4vw,28px);row-gap:10px">
+          <span style="flex:0 0 auto;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;color:#6b635a">03</span>
+          <h3 class="wtitle" style="margin:0;font-weight:600;font-size:clamp(1.5rem,3vw,2.4rem);line-height:1.02;letter-spacing:-.03em;transform-origin:left center;transition:transform .4s cubic-bezier(.16,1,.3,1)">Sportzentrum Oerlikon</h3>
+          <span style="flex:1 1 auto;min-width:0;margin-left:auto;text-align:right;font-size:11px;letter-spacing:.01em;color:#6b635a">Boltshauser Architekten · Stadt Zürich · Studio Blomen</span>
         </div>
-        <div style="flex:1.9 1 320px;min-width:0;display:flex;flex-direction:column;gap:14px">
-          <div style="aspect-ratio:16/10;background-image:repeating-linear-gradient(135deg,#ece4d5 0 8px,#f6f1e6 8px 16px);border-radius:6px;display:flex;align-items:flex-end;padding:12px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#6b635a">animation still</span></div>
-          <div class="player" data-player="2" style="display:flex;align-items:center;gap:16px;border:1px solid #e4ddd0;padding:12px 14px">
-        <button type="button" aria-label="Play excerpt" style="flex:none;width:44px;height:44px;border:0;border-radius:999px;background:#17150f;color:#fff;font-size:11px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;">▶</button>
-        <div class="bars" style="flex:1;display:flex;align-items:center;gap:2px;height:44px"><div style="flex:1;border-radius:1px;height:24%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:21%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:22%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:13%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:48%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:53%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:15%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:60%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:27%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:35%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:31%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:41%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:56%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:21%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:68%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:74%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:65%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:63%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:61%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:48%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:53%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:76%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:31%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:74%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:83%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:84%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:64%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:58%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:61%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:60%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:50%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:30%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:70%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:70%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:78%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:71%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:60%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:28%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:58%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:77%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:37%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:70%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:28%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:64%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:62%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:44%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:46%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:48%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:29%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:33%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:34%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:33%;background:#ded5c5"></div></div>
-        <span class="time" style="flex:none;font-family:'IBM Plex Mono',monospace;font-size:11px;color:#6b635a;min-width:38px;text-align:right">1:36</span>
-      </div>
-          <p style="margin:0;font-size:13px;line-height:1.6;color:#6b635a;white-space:pre-line;text-wrap:pretty">Animation by Studio Blomen
-Produced by Boltshauser Architekten, Stadt Zürich
-Music composition and sound design by Studio Felvar</p>
-        </div>
-      </div>
+        <p style="margin:-12px 0 0;max-width:62ch;font-size:13px;line-height:1.5;letter-spacing:-.003em;color:#4a443c;text-wrap:pretty">A virtual tour bringing the new sports centre to life through immersive 3D visualisations.</p>
+        <video src="assets/sportzentrum-oerlikon.mp4" poster="assets/oerlikon-poster.png" controls preload="none" playsinline style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#ece6dc;border-radius:6px"></video>
+        <dl style="margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 clamp(20px,4vw,56px);border-top:1px solid #ece6dc">
+          <div style="display:flex;flex-wrap:wrap;gap:2px 12px;padding:8px 0">
+            <dt style="flex:0 0 100%;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:#6b635a">Animation</dt>
+            <dd style="flex:1 1 100%;min-width:0;margin:0;font-size:13px;line-height:1.5;color:#17150f;text-wrap:pretty">Studio Blomen</dd>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:2px 12px;padding:8px 0">
+            <dt style="flex:0 0 100%;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:#6b635a">Produced</dt>
+            <dd style="flex:1 1 100%;min-width:0;margin:0;font-size:13px;line-height:1.5;color:#17150f;text-wrap:pretty">Boltshauser Architekten, Stadt Zürich</dd>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:2px 12px;padding:8px 0">
+            <dt style="flex:0 0 100%;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:#6b635a">Music composition and sound design</dt>
+            <dd style="flex:1 1 100%;min-width:0;margin:0;font-size:13px;line-height:1.5;color:#17150f;text-wrap:pretty">Studio Felvar</dd>
+          </div>
+        </dl>
     </article>
-    <article data-reveal style="border-top:1px solid #e4ddd0;padding:clamp(22px,3.2vw,38px) 0;display:flex;flex-wrap:wrap;gap:10px clamp(14px,3vw,40px)">
-      <span data-rail="num" style="flex:0 0 clamp(90px,15vw,220px);width:clamp(90px,15vw,220px);min-width:0;max-width:clamp(90px,15vw,220px);font-family:'IBM Plex Mono',monospace;font-size:clamp(1.1rem,1.8vw,1.5rem);font-weight:500;letter-spacing:.04em;color:#17150f">04</span>
-      <div style="flex:1 1 420px;min-width:0;display:flex;flex-wrap:wrap;gap:clamp(16px,2.6vw,36px)">
-        
-        <div style="flex:1 1 210px;min-width:0;display:flex;flex-direction:column;gap:12px">
-          <h3 class="wtitle" style="margin:0;font-weight:600;font-size:clamp(1.5rem,3vw,2.4rem);line-height:1.02;letter-spacing:-.03em;display:inline-block;transform-origin:left center;transition:transform .4s cubic-bezier(.16,1,.3,1)">Do You Accept Cookies?</h3>
-          <span style="font-size:13px;color:#6b635a;letter-spacing:.01em">Luke Cottrell</span>
+    <article data-reveal style="border-top:1px solid #e4ddd0;padding:clamp(22px,3.2vw,38px) 0;display:flex;flex-direction:column;gap:clamp(16px,2.4vw,26px)">
+        <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:6px clamp(14px,2.4vw,28px);row-gap:10px">
+          <span style="flex:0 0 auto;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;color:#6b635a">04</span>
+          <h3 class="wtitle" style="margin:0;font-weight:600;font-size:clamp(1.5rem,3vw,2.4rem);line-height:1.02;letter-spacing:-.03em;transform-origin:left center;transition:transform .4s cubic-bezier(.16,1,.3,1)">Do You Accept Cookies?</h3>
+          <span style="flex:1 1 auto;min-width:0;margin-left:auto;text-align:right;font-size:11px;letter-spacing:.01em;color:#6b635a">Luke Cottrell</span>
         </div>
-        <div style="flex:1.9 1 320px;min-width:0;display:flex;flex-direction:column;gap:14px">
-          <div style="aspect-ratio:16/10;background-image:repeating-linear-gradient(135deg,#ece4d5 0 8px,#f6f1e6 8px 16px);border-radius:6px;display:flex;align-items:flex-end;padding:12px"><span style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#6b635a">animation still</span></div>
-          <div class="player" data-player="3" style="display:flex;align-items:center;gap:16px;border:1px solid #e4ddd0;padding:12px 14px">
-        <button type="button" aria-label="Play excerpt" style="flex:none;width:44px;height:44px;border:0;border-radius:999px;background:#17150f;color:#fff;font-size:11px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;">▶</button>
-        <div class="bars" style="flex:1;display:flex;align-items:center;gap:2px;height:44px"><div style="flex:1;border-radius:1px;height:32%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:38%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:22%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:39%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:17%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:27%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:49%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:46%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:56%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:34%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:49%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:60%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:43%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:80%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:29%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:55%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:28%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:34%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:32%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:87%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:64%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:30%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:45%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:40%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:77%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:62%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:85%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:94%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:64%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:93%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:97%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:83%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:49%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:34%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:79%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:69%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:27%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:70%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:58%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:21%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:26%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:33%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:69%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:71%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:53%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:25%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:16%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:51%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:36%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:20%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:45%;background:#ded5c5"></div><div style="flex:1;border-radius:1px;height:14%;background:#ded5c5"></div></div>
-        <span class="time" style="flex:none;font-family:'IBM Plex Mono',monospace;font-size:11px;color:#6b635a;min-width:38px;text-align:right">1:52</span>
-      </div>
-          <p style="margin:0;font-size:13px;line-height:1.6;color:#6b635a;white-space:pre-line;text-wrap:pretty">Animation by Luke Cottrell
-Music composition and sound design by Studio Felvar</p>
-        </div>
-      </div>
+        <p style="margin:-12px 0 0;max-width:62ch;font-size:13px;line-height:1.5;letter-spacing:-.003em;color:#4a443c;text-wrap:pretty">A playful animated short exploring our relationship with cookies, consent and the digital world.</p>
+        <video src="assets/do-you-accept-cookies.mp4" poster="assets/cookies-poster.png" controls preload="none" playsinline style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#ece6dc;border-radius:6px"></video>
+        <dl style="margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 clamp(20px,4vw,56px);border-top:1px solid #ece6dc">
+          <div style="display:flex;flex-wrap:wrap;gap:2px 12px;padding:8px 0">
+            <dt style="flex:0 0 100%;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:#6b635a">Animation</dt>
+            <dd style="flex:1 1 100%;min-width:0;margin:0;font-size:13px;line-height:1.5;color:#17150f;text-wrap:pretty">Luke Cottrell</dd>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:2px 12px;padding:8px 0">
+            <dt style="flex:0 0 100%;font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:#6b635a">Music composition and sound design</dt>
+            <dd style="flex:1 1 100%;min-width:0;margin:0;font-size:13px;line-height:1.5;color:#17150f;text-wrap:pretty">Studio Felvar</dd>
+          </div>
+        </dl>
     </article>
   </section>
 
@@ -184,7 +240,7 @@ Music composition and sound design by Studio Felvar</p>
 
   <section style="border-top:1px solid #e4ddd0;padding:clamp(34px,5.5vh,64px) 0;display:flex;flex-wrap:wrap;gap:10px clamp(14px,3vw,40px)">
     <span data-rail="label" style="flex:0 0 clamp(90px,15vw,220px);width:clamp(90px,15vw,220px);min-width:0;max-width:clamp(90px,15vw,220px);font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:#6b635a;">Selected clients &amp; collaborators</span>
-    <div style="flex:1 1 420px;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:4px 32px">
+    <div style="flex:1 1 420px;min-width:0;display:flex;flex-wrap:wrap;gap:10px clamp(20px,3.4vw,44px)">
       <span style="font-size:14.5px;line-height:1.75;letter-spacing:-.005em">Der Beobachter</span>
       <span style="font-size:14.5px;line-height:1.75;letter-spacing:-.005em">Elephant Stories</span>
       <span style="font-size:14.5px;line-height:1.75;letter-spacing:-.005em">Stadt Zürich</span>
@@ -196,14 +252,18 @@ Music composition and sound design by Studio Felvar</p>
   <footer style="border-top:1px solid #17150f;padding:clamp(38px,6vh,70px) 0 clamp(24px,3.4vh,36px)">
     <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:clamp(22px,4vh,44px)">
       <p data-reveal style="margin:0;max-width:22ch;font-size:clamp(1.9rem,6vw,5rem);font-weight:600;letter-spacing:-.04em;line-height:1.04;text-wrap:balance">Got something to score, edit, or master?</p>
-      <a href="mailto:hello@studiofelvar.com" style="flex:0 0 auto;max-width:100%;overflow-wrap:anywhere;font-size:clamp(1.02rem,4.6vw,1.6rem);letter-spacing:-.015em;color:#17150f;border-bottom:1px solid #17150f;padding-bottom:4px">hello@studiofelvar.com</a>
+      <a href="mailto:hello@studiofelvar.com" class="mail" style="flex:0 0 auto;max-width:100%;overflow-wrap:anywhere;font-size:clamp(1.02rem,4.6vw,1.6rem);letter-spacing:-.015em;color:#17150f;border-bottom:1px solid #17150f;padding-bottom:4px">hello@studiofelvar.com</a>
     </div>
     <div data-foot-meta style="display:flex;justify-content:space-between;align-items:baseline;gap:16px 40px;flex-wrap:wrap;margin-top:clamp(34px,5.5vh,64px);padding-top:clamp(14px,2vh,22px);border-top:1px solid #e4ddd0;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:#6b635a">
       <span>© Studio Felvar — Zürich, Switzerland</span>
-      <span>Recording · Sound design · Music composition · Audio post-production</span>
       <span>2026</span>
     </div>
   </footer>
+</div>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Enlarged image" style="position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;padding:clamp(16px,4vw,64px);background:rgba(23,21,15,.92);cursor:zoom-out;opacity:0;transition:opacity .25s ease">
+  <img id="lbimg" alt="" style="max-width:100%;max-height:100%;object-fit:contain;border-radius:6px;box-shadow:0 30px 80px rgba(0,0,0,.5)" />
+  <button id="lbx" type="button" aria-label="Close" style="position:absolute;top:clamp(12px,2vw,24px);right:clamp(12px,2vw,24px);width:44px;height:44px;border:0;border-radius:999px;background:rgba(251,249,244,.14);color:#fbf9f4;font-family:'IBM Plex Mono',monospace;font-size:15px;cursor:pointer">✕</button>
 </div>
 
 <script>
@@ -226,6 +286,25 @@ Music composition and sound design by Studio Felvar</p>
     } else { els.forEach(show); }
     setTimeout(function () { els.forEach(show); }, 2500);
   }
+
+  var lb = document.getElementById('lb'), lbimg = document.getElementById('lbimg');
+  function openLb(src, alt) {
+    lbimg.src = src; lbimg.alt = alt || '';
+    lb.style.display = 'flex';
+    requestAnimationFrame(function () { lb.style.opacity = '1'; });
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLb() {
+    lb.style.opacity = '0';
+    document.body.style.overflow = '';
+    setTimeout(function () { lb.style.display = 'none'; lbimg.src = ''; }, 250);
+  }
+  document.addEventListener('click', function (e) {
+    var img = e.target.closest && e.target.closest('img[data-zoom]');
+    if (img) { openLb(img.currentSrc || img.src, img.alt); return; }
+    if (e.target === lb || (e.target.closest && e.target.closest('#lbx'))) closeLb();
+  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && lb.style.display === 'flex') closeLb(); });
 
   var DUR = [144,168,96,112];
   var INK = '#17150f', IDLE = '#ded5c5';

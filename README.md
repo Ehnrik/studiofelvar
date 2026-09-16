@@ -1,30 +1,24 @@
 # studiofelvar.com
 
-Static one-page site. No build step.
+Static one-page site. No build step — Cloudflare serves these files as-is.
 
-## Deploy — Cloudflare Workers (static assets)
-1. Push this folder's contents to `Ehnrik/studiofelvar` (branch `main`), including `wrangler.toml`.
-2. Cloudflare → Create an app → Connect to Git → pick the repo.
-3. Build command: *(leave empty)*. Deploy command: `npx wrangler deploy`.
-4. Deploy, then Settings → Domains & Routes → add `studiofelvar.com` and `www.studiofelvar.com`.
-
-`wrangler.toml` is what makes this work — it tells Wrangler the repo root is a static asset
-directory, so there is nothing to build.
-
-Standalone Pages projects are no longer offered on new Cloudflare accounts — Workers with
-static assets is the equivalent, and `wrangler.toml` is what makes it work with no build step.
-
-## Cutting over from Cargo
-Cloudflare Pages gives you a `*.pages.dev` URL immediately — check that first. Only repoint the
-`studiofelvar.com` DNS records away from Cargo once you're happy with it.
+## Update the live site
+1. Replace the repo contents with this folder's contents (keep the same structure).
+2. Commit to `main`.
+3. Cloudflare redeploys automatically; check the Worker's Deployments tab.
+4. Hard-reload the site (Cmd+Shift+R) — the old version caches.
 
 ## Files
 - `index.html` — the whole site (inline styles, one inline script)
-- `assets/` — series artwork
+- `favicon.svg` — F monogram
+- `wrangler.toml` — tells Cloudflare the repo root is a static asset directory
+- `assets/` — artwork and the awards photo
 - `robots.txt`, `sitemap.xml`
 
 ## Still to do
-- Replace Archivo with Articulat CF: upload the woff2 files to `assets/fonts/`, swap the Google
-  Fonts `<link>` for an `@font-face` block, change `font-family: Archivo` to `Articulat CF`.
-- Videos for Sportzentrum Oerlikon and Do You Accept Cookies? — those two entries currently show
-  striped placeholders and a dummy waveform player.
+- Videos for Sportzentrum Oerlikon and Do You Accept Cookies? — both entries show striped
+  16:9 placeholders sized for the real footage. Export ~720p H.264 under 25 MB (Cloudflare's
+  per-file limit), drop into `assets/`, and the placeholder swaps for a `<video>` element.
+- Articulat CF: upload woff2 files to `assets/fonts/`, replace the Google Fonts `<link>`
+  with an `@font-face` block, change `font-family: Archivo` to `Articulat CF`.
+- No Open Graph image yet — a 1200x630 `assets/og.jpg` would give shared links a preview.
