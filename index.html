@@ -39,6 +39,13 @@
     [data-svc-desc] { white-space: normal !important; overflow: visible !important; }
     [data-foot-meta] { justify-content: flex-start !important; }
     [data-foot-meta] span { flex: 1 1 100% !important; }
+    #work article > p { margin-top: 0 !important; font-size: 14px !important; line-height: 1.55 !important; max-width: none !important; }
+    #work dl > div { padding: 11px 0 !important; }
+    #work dl > div dd { font-size: 14px !important; line-height: 1.5 !important; }
+    #work dl { row-gap: 0 !important; }
+    #work article { gap: clamp(18px, 4vw, 26px) !important; }
+    #work article > div:first-child { align-items: flex-start !important; }
+    #work article > div:first-child > span:last-child { margin-left: 0 !important; text-align: left !important; flex: 1 1 100% !important; }
   }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto !important; } * { animation: none !important; transition: none !important; } }
 </style>
@@ -75,7 +82,7 @@
           <h3 class="wtitle" style="margin:0;font-weight:600;font-size:clamp(1.5rem,3vw,2.4rem);line-height:1.02;letter-spacing:-.03em;transform-origin:left center;transition:transform .4s cubic-bezier(.16,1,.3,1)"><a href="https://elephantstories.ch/overkill/" target="_blank" rel="noopener" style="border-bottom:1px solid #d6cdbb;padding-bottom:2px">Overkill</a></h3>
           <span style="flex:1 1 auto;min-width:0;margin-left:auto;text-align:right;font-size:11px;letter-spacing:.01em;color:#6b635a">Elephant Stories · Der Beobachter</span>
         </div>
-        <p style="margin:-12px 0 0;max-width:62ch;font-size:13px;line-height:1.5;letter-spacing:-.003em;color:#4a443c;text-wrap:pretty">A five-part true-crime podcast series about a murder, its victims and the search for justice.</p>
+        <p style="margin:-12px 0 0;max-width:none;font-size:13px;line-height:1.5;letter-spacing:-.003em;color:#4a443c;text-wrap:pretty">A five-part true-crime podcast series about a murder, its victims and the search for justice.</p>
         <div style="display:flex;flex-wrap:wrap;align-items:stretch;gap:clamp(12px,2vw,20px);max-width:640px;background:#f6e7bb;color:#443614;border-radius:6px;padding:clamp(12px,1.6vw,16px)">
           <img src="assets/award-verleihung.jpg" alt="Studio Felvar at the Suisse Podcast Awards" loading="lazy" data-zoom style="cursor:zoom-in;flex:0 0 auto;display:block;width:clamp(150px,22vw,246px);aspect-ratio:3/2;object-fit:cover;border-radius:4px" />
           <div style="flex:1 1 260px;min-width:0;display:flex;flex-direction:column;justify-content:center;gap:8px">
@@ -110,7 +117,7 @@
           <h3 class="wtitle" style="margin:0;font-weight:600;font-size:clamp(1.5rem,3vw,2.4rem);line-height:1.02;letter-spacing:-.03em;transform-origin:left center;transition:transform .4s cubic-bezier(.16,1,.3,1)"><a href="https://elephantstories.ch/elephant-in-the-room/" target="_blank" rel="noopener" style="border-bottom:1px solid #d6cdbb;padding-bottom:2px">Elephant In The Room</a></h3>
           <span style="flex:1 1 auto;min-width:0;margin-left:auto;text-align:right;font-size:11px;letter-spacing:.01em;color:#6b635a">Elephant Stories</span>
         </div>
-        <p style="margin:-12px 0 0;max-width:62ch;font-size:13px;line-height:1.5;letter-spacing:-.003em;color:#4a443c;text-wrap:pretty">A podcast series about the issues we’d rather not talk about.</p>
+        <p style="margin:-12px 0 0;max-width:none;font-size:13px;line-height:1.5;letter-spacing:-.003em;color:#4a443c;text-wrap:pretty">A podcast series about the issues we’d rather not talk about.</p>
         <div style="display:flex;flex-wrap:wrap;align-items:stretch;gap:clamp(12px,2vw,20px)">
           <img src="assets/elephant-in-the-room.webp" alt="Elephant In The Room series artwork" loading="lazy" data-zoom style="cursor:zoom-in;flex:0 0 auto;display:block;width:clamp(120px,16vw,186px);aspect-ratio:1/1;object-fit:cover;border-radius:6px;transition:opacity .4s ease" />
           <div style="flex:1 1 320px;min-width:0;display:flex;flex-direction:column;justify-content:center">
@@ -161,7 +168,7 @@ are aged 28 to 44</span>
           <h3 class="wtitle" style="margin:0;font-weight:600;font-size:clamp(1.5rem,3vw,2.4rem);line-height:1.02;letter-spacing:-.03em;transform-origin:left center;transition:transform .4s cubic-bezier(.16,1,.3,1)">Sportzentrum Oerlikon</h3>
           <span style="flex:1 1 auto;min-width:0;margin-left:auto;text-align:right;font-size:11px;letter-spacing:.01em;color:#6b635a">Boltshauser Architekten · Stadt Zürich · Studio Blomen</span>
         </div>
-        <p style="margin:-12px 0 0;max-width:62ch;font-size:13px;line-height:1.5;letter-spacing:-.003em;color:#4a443c;text-wrap:pretty">A virtual tour bringing the new sports centre to life through immersive 3D visualisations.</p>
+        <p style="margin:-12px 0 0;max-width:none;font-size:13px;line-height:1.5;letter-spacing:-.003em;color:#4a443c;text-wrap:pretty">A virtual tour bringing the new sports centre to life through immersive 3D visualisations.</p>
         <video src="assets/sportzentrum-oerlikon.mp4" poster="assets/oerlikon-poster.png" controls preload="none" playsinline style="display:block;width:100%;max-width:640px;aspect-ratio:16/9;object-fit:cover;background:#ece6dc;border-radius:6px"></video>
         <dl style="margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 clamp(20px,4vw,56px);border-top:1px solid #ece6dc">
           <div style="display:flex;flex-wrap:wrap;gap:2px 12px;padding:8px 0">
@@ -184,7 +191,7 @@ are aged 28 to 44</span>
           <h3 class="wtitle" style="margin:0;font-weight:600;font-size:clamp(1.5rem,3vw,2.4rem);line-height:1.02;letter-spacing:-.03em;transform-origin:left center;transition:transform .4s cubic-bezier(.16,1,.3,1)">Do You Accept Cookies?</h3>
           <span style="flex:1 1 auto;min-width:0;margin-left:auto;text-align:right;font-size:11px;letter-spacing:.01em;color:#6b635a">Luke Cottrell</span>
         </div>
-        <p style="margin:-12px 0 0;max-width:62ch;font-size:13px;line-height:1.5;letter-spacing:-.003em;color:#4a443c;text-wrap:pretty">A playful animated short exploring our relationship with cookies, consent and the digital world.</p>
+        <p style="margin:-12px 0 0;max-width:none;font-size:13px;line-height:1.5;letter-spacing:-.003em;color:#4a443c;text-wrap:pretty">A playful animated short exploring our relationship with cookies, consent and the digital world.</p>
         <video src="assets/do-you-accept-cookies.mp4" poster="assets/cookies-poster.png" controls preload="none" playsinline style="display:block;width:100%;max-width:640px;aspect-ratio:16/9;object-fit:cover;background:#ece6dc;border-radius:6px"></video>
         <dl style="margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:0 clamp(20px,4vw,56px);border-top:1px solid #ece6dc">
           <div style="display:flex;flex-wrap:wrap;gap:2px 12px;padding:8px 0">
